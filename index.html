@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Heading -->
+    <h1>🌤️ Let’s Check the Weather</h1>
+
+    <div class="card">
+
+        <!-- Country Dropdown -->
+        <label>Select Country</label>
+        <select id="country">
+            <option value="">Select Country</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Canada</option>
+            <option>Australia</option>
+        </select>
+
+        <!-- City Dropdown (Predefined Options) -->
+        <label>Select City</label>
+        <select id="city">
+            <option value="">Select City</option>
+
+            <optgroup label="India">
+                <option>Mumbai</option>
+                <option>Delhi</option>
+                <option>Pune</option>
+                <option>Bangalore</option>
+            </optgroup>
+
+            <optgroup label="USA">
+                <option>New York</option>
+                <option>Los Angeles</option>
+                <option>Chicago</option>
+            </optgroup>
+
+            <optgroup label="UK">
+                <option>London</option>
+                <option>Manchester</option>
+            </optgroup>
+
+            <optgroup label="Canada">
+                <option>Toronto</option>
+                <option>Vancouver</option>
+            </optgroup>
+
+            <optgroup label="Australia">
+                <option>Sydney</option>
+                <option>Melbourne</option>
+            </optgroup>
+
+        </select>
+
+        <!-- Button -->
+        <button id="getWeather">Check Weather</button>
+
+        <!-- Loader -->
+        <div id="loader" class="loader"></div>
+
+        <!-- Result -->
+        <div id="weatherResult"></div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

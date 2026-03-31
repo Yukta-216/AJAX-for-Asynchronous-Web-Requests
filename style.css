@@ -1,0 +1,81 @@
+/* Background */
+body {
+    font-family: 'Segoe UI';
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    margin-top: 60px;
+}
+
+/* Heading */
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Card */
+.card {
+    background: white;
+    width: 350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: fadeIn 1s;
+}
+
+/* Inputs */
+select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Button */
+button {
+    padding: 10px 15px;
+    border: none;
+    background: #36d1dc;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2a9dad;
+}
+
+/* Weather Result */
+#weatherResult {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* Loader */
+.loader {
+    display: none;
+    margin: 10px auto;
+    border: 5px solid #eee;
+    border-top: 5px solid #36d1dc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+}
+
+/* Animations */
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
